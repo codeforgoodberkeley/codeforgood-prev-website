@@ -12,10 +12,11 @@
 <header>
     <span>
         <header_title> Code For Good Berkeley  </header_title>
-        <header_tab1> Home </header_tab>
-        <header_tab> About CFG </header_tab>
-        <header_tab> Contact Us </header_tab>
-        <header_tab> Apply Now </header_tab>
+        
+        <a class="header_tab1" href="/"> Home </a>
+        <a class="header_tab" href="/"> About CFG </a>
+        <a class="header_tab" href="/"> Contact Us </a>
+        <a class="header_tab" href="/"> Apply Now </a>
     </span>
   </div>
 </header>
@@ -33,28 +34,27 @@
 
 
 <footer>
+  <div class="footer-logo">
+    <a href="/"><img src="images/cfglogo.jpg" alt="CFGLogo"></a>
+  </div>
 
-    <div class="right">
-    <a class="logo" href="/">
-        <img src="/images/cfglogo.png" alt="<3">
-    </a>
-
+  <div class="footer-link">
     <a href="https://www.ocf.berkeley.edu">
-        <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
-            alt="Hosted by the OCF" style="border: 0;" />
-    </a>
-    </div>
-    
-    <div class="left">
-    <disclaimer>Code For Good is a student group acting independently of the University of California. We take full responsibility for our organization and this website.</disclaimer>
-    
-    <h3>contact us</h3>
-    <p><a href="mailto:codeforgoodberkeley@gmail.com">codeforgoodberkeley@gmail.com</a></p>
-    <div class="copyright">©2023 Code For Good</div>
-    
-    </div>
+    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
+        alt="Hosted by the OCF" style="border: 0;" />
+      </a>
+  </div>
 
-  </footer>
+  <div class="footer-contact">
+    <p>Contact Us</p>
+    <a href="mailto:codeforgoodberkeley@gmail.com">codeforgoodberkeley@gmail.com</a>
+  </div>
+
+  <div class="footer-disclaimer">
+    <p>Code For Good is a student group acting independently of the University of California. We take full responsibility for our organization and this website.</p>
+  </div>
+</footer>
+  <div class="copyright">©2023 Code For Good</div>
 
 
 
@@ -121,76 +121,100 @@
     width: 30%;
   }
 
-  header_tab1 {
+  a.header_tab1, a.header_tab {
     font-family: 'Montserrat';
     font-size: 18px;
     color: #EDC580;
     font-weight: bold;
-    align-items: right;
+    align-items: left;
     vertical-align: middle;
+    text-decoration: none;
 
     width:100%;
+    position: relative;
+    margin-left: 30px;
+  }
 
-    padding-left: 45%;
+  a.header_tab1 {
+    padding-left: 0%;
+    margin-left: 500px;
   }
   
-  header_tab {
-    font-family: 'Montserrat';
-    font-size: 18px;
-    color: #EDC580;
-    vertical-align: middle;
-
-    font-weight: bold;
-    align-items: right;
-    width:100%;
-    padding-left: 2%;
+  a.header_tab {
+    padding-left: 0%;
   }
 
   footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: row;
-    margin: 0px 20px;
-    border: solid;
-    border-color: #EDC580; 
-    border-width: 3px;
-    /* text-align: center;
-    padding: 3px;
-    background-color: #121212;
-    color: #EDC580; */
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: solid;
+  border-color: #EDC580;
+  border-width: 3px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 70px;
+  /*flex-wrap: wrap;*/
+}
 
-  footer .right {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
-  
-  footer .right .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.footer-logo, .footer-link, .footer-contact, .footer-disclaimer {
+  width: 25%;
+}
 
-  footer .left>* {
-    margin: 20px 20px
-  }
+.footer-logo img {
+  height: 140px;
+}
 
-  footer .left .contact {
-    flex-shrink: 1;
-  }
+.footer-link img {
+  height: 40px;
+  margin-left: 10px;
+  border: 0;
+}
 
-  footer .disclaimer {
-    line-height: 1.2em;
-    font-size: 16px;
-    letter-spacing: normal;
-    color: #EDC580
-  }
+.footer-contact {
+  text-align: left;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.footer-contact a:before, a.header_tab:before, a.header_tab1:before {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* adjust this value to position the underline under the email text */
+  left: 50%; /* position the underline at the center of the email */
+  transform: translateX(-50%); /* adjust the position of the underline to the center of the email */
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease; /* add the animation with a duration of 0.5s and ease timing function */
+}
+
+.footer-contact a:hover:before, a.header_tab:hover:before, a.header_tab1:hover:before {
+  width: 85%; /* expand the underline to the width of the email on hover */
+}
+
+.footer-disclaimer {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.copyright {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 
 </style>
