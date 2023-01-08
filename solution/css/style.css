@@ -841,6 +841,10 @@ body {
 
 /* The company logo */
 
+.footer-distributed .footer-left img{
+  width:300px;
+}
+
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Open Sans', cursive;
@@ -898,6 +902,10 @@ body {
 	line-height: 38px;
 }
 
+.fa-envelope:hover + a {
+  text-decoration: underline;
+}
+
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
@@ -912,8 +920,9 @@ body {
 }
 
 .footer-distributed .footer-center .ocf{
-	margin: 20px 0px 0px 0px;
+	margin: 32px 0px 0px 0px;
 }
+
 
 .footer-distributed .footer-center p span{
 	display:block;
@@ -959,7 +968,7 @@ body {
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 15px;
+	font-size: 15.5px;
 	/*font-weight: bold;*/
 	margin-bottom: 20px;
 }
@@ -981,7 +990,7 @@ body {
 	text-align: center;
 	line-height: 35px;
 
-	margin-right: 3px;
+	margin-right: 30px;
 	margin-bottom: 5px;
 }
 
