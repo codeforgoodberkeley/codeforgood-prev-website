@@ -28,12 +28,17 @@ ul, li{
 }
 .wrapper{
   background: #eaf6ff;
-  padding: 2rem;
-  border-radius: 15px;
+  padding: 2.3rem;
+  border-radius: 25px;
 }
 h1{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+h2{
   font-size: 1.1rem;
   font-family: sans-serif;
+  margin-top: .2rem;
 }
 .sessions{
   margin-top: 2rem;
@@ -46,6 +51,7 @@ li{
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
+  margin-right: 10px;
   &:last-child{
     border: 0px;
     padding-bottom: 0;
@@ -67,7 +73,7 @@ li{
 .time{
   color: #2a2839;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   @include mobile-and-up{
     font-size: .9rem;
   }
