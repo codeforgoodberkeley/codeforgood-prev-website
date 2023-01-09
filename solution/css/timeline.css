@@ -27,9 +27,10 @@ ul, li{
   padding: 3rem 0;
 }
 .wrapper{
+  margin-top: 2rem;
   background: #eaf6ff;
   padding: 2.3rem;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 h1{
   font-size: 1.5rem;
@@ -39,6 +40,20 @@ h2{
   font-size: 1.1rem;
   font-family: sans-serif;
   margin-top: .2rem;
+}
+h3{
+  font-size: 4rem;
+  font-family: sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1.1rem;
+  text-align: center;
+  color: #2a2839;
+}
+p1{
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  margin-left: 14rem;
+  color: #fff;
 }
 .sessions{
   margin-top: 2rem;
