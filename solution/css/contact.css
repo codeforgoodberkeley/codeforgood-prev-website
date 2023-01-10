@@ -1,0 +1,69 @@
+@mixin tablet-and-up {
+    @media screen and (min-width: 769px) { @content; }
+}
+@mixin mobile-and-up {
+    @media screen and (min-width: 601px) { @content; }
+}
+@mixin tablet-and-down  {
+    @media screen and (max-width: 768px) { @content; }
+}
+@mixin mobile-only {
+    @media screen and (max-width: 600px) { @content; }
+}
+
+#contact-text-section {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 80%;
+    display: inline-block;
+    margin: 0 30px;
+    flex: 1;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+  
+  .contactTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px 10px;
+  }
+  
+  .textHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 25px;
+  }
+
+  @media (max-width: 768px) {
+    #contact-text-section {
+      display: block;
+    }
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  
