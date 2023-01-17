@@ -30,7 +30,7 @@
     border-radius: 15px; /* 5px rounded corners */
     display: inline-block;
     background: #eaf6ff;
-    margin: 0 80px;
+    margin: 0 70px;
     flex: 1;
     max-width: 500px;
     max-height: 250px;
@@ -57,7 +57,8 @@
     justify-content: center;
     align-items: center;
     padding: 5rem 1rem;
-    background: linear-gradient(45deg, #209cff, #68e0cf);
+    /*background: linear-gradient(45deg, #209cff, #68e0cf);*/
+    background: linear-gradient(45deg, #209cff, #72dfed);
     }
   
   .contactTitle {
@@ -66,7 +67,7 @@
     align-items: center;
     font-size: 4rem;
   font-family: sans-serif;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   margin-bottom: 1.1rem;
   color: #2a2839;
   }
@@ -75,12 +76,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.25rem;
     font-family: sans-serif;
     color: #2a2839;
     display: flex;
-    
-    padding: 0px 0px 55px;
+    padding: 0px 10% 55px;
   }
 
   @media (max-width: 768px) {
