@@ -60,6 +60,9 @@
     }
   
   .contactTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 4rem;
   font-family: sans-serif;
   margin-top: 1.5rem;
@@ -68,9 +71,11 @@
   }
   
   .textHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.25rem;
     font-family: sans-serif;
-   
     color: #2a2839;
     display: flex;
     

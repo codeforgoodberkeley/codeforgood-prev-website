@@ -41,6 +41,9 @@ font-family: sans-serif;
 margin-top: .2rem;
 }
 h13{
+  display: flex;
+    justify-content: center;
+    align-items: center;
   font-size: 4rem;
   font-family: sans-serif;
   margin-top: 1.5rem;
@@ -107,10 +110,3 @@ margin-top:0.4rem;
   font-size: .9rem;
 }
 }
-
-li div{
-  display: flex;
-  justify-content: center;
-    align-items: center;
-}
-
