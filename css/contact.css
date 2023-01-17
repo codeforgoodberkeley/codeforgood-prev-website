@@ -60,19 +60,21 @@
     }
   
   .contactTitle {
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 30px;
+    font-size: 4rem;
+  font-family: sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1.1rem;
+  color: #2a2839;
   }
   
   .textHolder {
-    font-size: 25px;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+   
+    color: #2a2839;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 55px;
+    
+    padding: 0px 0px 55px;
   }
 
   @media (max-width: 768px) {
