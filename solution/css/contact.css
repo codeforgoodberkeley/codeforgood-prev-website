@@ -11,59 +11,77 @@
     @media screen and (max-width: 600px) { @content; }
 }
 
+* {
+  font-family: Open Sans;
+}
+
 #contact-text-section {
     display: flex;
     margin-left: 90px;
     margin-right: 90px;
+    margin-bottom: 50px;
+    justify-content: center;
   }
   
-  .card {
+  .cards {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    width: 80%;
+    border-radius: 15px; /* 5px rounded corners */
     display: inline-block;
-    margin: 0 30px;
+    background: #eaf6ff;
+    margin: 0 0px;
     flex: 1;
+    max-width: 500px;
+    max-height: 250px;
   }
   
   /* On mouse-over, add a deeper shadow */
-  .card:hover {
+  .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   /* Add some padding inside the card container */
-  .container {
+  .cardcontain {
     padding: 2px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80%;
+    
   }
+
+  .containers{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(45deg, #209cff, #68e0cf);
+    }
   
   .contactTitle {
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 50px 10px;
+    padding: 0px 50px 30px;
   }
   
   .textHolder {
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 50px 25px;
+    padding: 0px 50px 55px;
   }
 
   @media (max-width: 768px) {
     #contact-text-section {
       display: block;
     }
-    .card {
+    .cards {
       width: 100%;
       margin: 10px 0;
     }
   }
-  
   
