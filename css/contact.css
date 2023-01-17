@@ -86,7 +86,14 @@
     padding: 0px 5% 45px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
+    .cards {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+
+  @media (max-width: 780px) {
     #contact-text-section {
       display: block;
       margin-bottom: 0px;
