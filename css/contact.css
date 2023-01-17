@@ -43,7 +43,7 @@
   
   /* Add some padding inside the card container */
   .cardcontain {
-    padding: 2px 16px;
+    padding: 10px 16px 2px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
