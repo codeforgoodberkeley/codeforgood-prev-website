@@ -86,14 +86,6 @@
     padding: 0px 5% 45px;
   }
 
-  p{
-    color: #4f4f4f!important;
-  }
-
-  .grey{
-    color: rgb(255, 255, 255)!important;
-  }
-
   @media (max-width: 1000px) {
     .cards {
       margin-left: 5%;
