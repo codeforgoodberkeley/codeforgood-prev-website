@@ -815,7 +815,9 @@ body {
 }
 
 
-
+.white::before{
+  background-color: #ffffff!important;
+}
 .footer-distributed{
 	background:  #000;
   opacity: 1;
