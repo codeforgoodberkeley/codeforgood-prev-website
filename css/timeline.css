@@ -60,6 +60,10 @@ text-align: center;
 color: #2a2839;
 }
 
+.grey{
+  color: rgb(255, 255, 255)!important;
+}
+
 .sessions{
 margin-top: 2rem;
 border-radius: 12px;
@@ -104,7 +108,7 @@ font-weight: bold;
 
 }
 p{
-color: #4f4f4f;
+color: #4f4f4f!important;
     font-family: sans-serif;
 line-height: 1.5;
 margin-top:0.4rem;
