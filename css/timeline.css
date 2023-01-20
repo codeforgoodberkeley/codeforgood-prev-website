@@ -26,7 +26,8 @@ ul, li{
   padding: 3rem 0;
 }
 .wrapper{
-  max-width: 1200px;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
   margin-top: 2rem;
   background: #eaf6ff;
   padding: 2.3rem;
