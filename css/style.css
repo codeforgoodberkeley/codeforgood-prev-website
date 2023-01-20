@@ -1007,7 +1007,7 @@ body {
   height: 2px;
   bottom: -3px;
   left: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   transition: 0.3s;
 }
 
