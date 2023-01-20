@@ -14,6 +14,9 @@
 * {
   font-family: Open Sans;
 }
+.sans-serif{
+  font-family: sans-serif;
+}
 
 #contact-text-section {
     display: flex;

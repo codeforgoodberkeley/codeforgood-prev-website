@@ -59,7 +59,9 @@ align-items: center;
 text-align: center;
 color: #2a2839;
 }
-
+.sans-serif{
+  font-family: sans-serif;
+}
 .sessions{
 margin-top: 2rem;
 border-radius: 12px;
