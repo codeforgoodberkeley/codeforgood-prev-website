@@ -33,6 +33,10 @@ ul, li{
   padding: 2.3rem;
   border-radius: 15px;
 }
+
+.bold{
+  font-weight: bold;
+}
 h11{
   font-size: 1.5rem;
   font-family: sans-serif;
